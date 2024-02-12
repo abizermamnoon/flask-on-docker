@@ -17,7 +17,7 @@ Uses the default Flask development server
 3. Build the images and run the containers:
 ```bash
 $ docker-compose up -d --build
-
+```
 Test it out at http://localhost:3214
 
 ## Production
@@ -29,5 +29,5 @@ Uses gunicorn + nginx
 ```bash
 $ docker-compose -f docker-compose.prod.yml up -d --build
 $ docker-compose -f docker-compose.prod.yml exec web python manage.py create_db
-
+```
 Test it out at http://localhost:3214/upload
